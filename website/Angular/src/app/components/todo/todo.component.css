@@ -1,0 +1,19 @@
+.strike {
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+.unstrike {
+    font-weight: 800;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.completed{
+    color: green;
+}
+.incomplete{
+    color: #ddd;
+}

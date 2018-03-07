@@ -1,0 +1,5 @@
+/home/dahln/repos/cdp/api
+--output-path=obj/Debug/netcoreapp2.0/
+--application-name=net.mongo
+--content-root=/home/dahln/repos/cdp/api
+--file=

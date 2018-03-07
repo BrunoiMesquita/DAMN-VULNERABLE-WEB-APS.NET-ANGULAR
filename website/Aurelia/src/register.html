@@ -1,0 +1,34 @@
+<template>
+  <div class="row">
+    <h4 class="mx-auto">Register</h4>
+  </div>
+
+  <div class="row">
+    <p class="mx-auto">
+      To try out this application, please create an account. To register, provide an Email Address and Password. This is a demo
+      application, no emails are sent. Email format is validated as part of the demo.
+    </p>
+  </div>
+
+  <div class="row">
+    <form submit.delegate="register()" class="col-md-4 mx-auto">
+      <div class="row">
+        <input class="form-control mt-1" type="text" value.bind="email" placeholder="Email" />
+      </div>
+      <div class="row">
+        <input class="form-control mt-1" type="password" value.bind="password" placeholder="Password" />
+      </div>
+      <div class="row">
+        <input class="form-control mt-1" type="password" value.bind="confirmpassword" placeholder="Confirm Password" />
+      </div>
+      <div class="row">
+        <input class="btn btn-primary mt-1 width-100p" type="submit" value="Register" />
+      </div>
+    </form>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-md-4 mx-auto ${error === true ? 'alert alert-danger' : null} ${error === false ? 'alert alert-success' : null}">${results}</div>
+  </div>
+
+</template>

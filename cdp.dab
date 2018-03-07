@@ -1,0 +1,35 @@
+{
+  "Services": {
+    "api": {
+      "Image": "dahln/private@sha256:dc3c7c6c72bba64829e5e3504123770406749a8aeb9dd80e801b6440ffb29d07", 
+      "Networks": [
+        "default"
+      ]
+    }, 
+    "db": {
+      "Image": "dahln/private@sha256:08403030e7575409352cf1f26e3109bdae7e804742b2b84d448b1a6e36d7184e", 
+      "Networks": [
+        "default"
+      ]
+    }, 
+    "ng": {
+      "Image": "dahln/private@sha256:d7104614be99d61b35719a2105d053cc5a823bd5f8eaecc8bbb4a3c94eef23b4", 
+      "Networks": [
+        "default"
+      ]
+    }, 
+    "proxy": {
+      "Image": "dahln/private@sha256:0f459910405f661a9382527f8812cfbbc59c4f0e656a5609a1bbdf29ae1a734e", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 80, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}

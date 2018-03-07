@@ -1,0 +1,10 @@
+/home/dahln/repos/cdp/bin/Debug/netcoreapp2.0/net.mongo.deps.json
+/home/dahln/repos/cdp/bin/Debug/netcoreapp2.0/net.mongo.runtimeconfig.json
+/home/dahln/repos/cdp/bin/Debug/netcoreapp2.0/net.mongo.runtimeconfig.dev.json
+/home/dahln/repos/cdp/bin/Debug/netcoreapp2.0/net.mongo.dll
+/home/dahln/repos/cdp/bin/Debug/netcoreapp2.0/net.mongo.pdb
+/home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.csproj.CoreCompileInputs.cache
+/home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.AssemblyInfoInputs.cache
+/home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.AssemblyInfo.cs
+/home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.dll
+/home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.pdb

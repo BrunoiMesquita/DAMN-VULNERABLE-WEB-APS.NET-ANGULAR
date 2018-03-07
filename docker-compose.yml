@@ -1,0 +1,28 @@
+version: '3'
+ 
+services:
+  db:
+    image: cdp_db
+    build:
+      context:  ./db
+      dockerfile: Dockerfile
+
+  api:
+    image: cdp_api
+    build:
+      context:  ./api
+      dockerfile: Dockerfile
+
+  ng:
+    image: cdp_ng
+    build:
+      context: ./website/Angular
+      dockerfile: Dockerfile
+ 
+  proxy:
+    image: cdp_proxy
+    build:
+      context:  ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
