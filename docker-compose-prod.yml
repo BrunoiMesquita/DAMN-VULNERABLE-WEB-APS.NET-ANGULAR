@@ -1,0 +1,16 @@
+version: '3'
+ 
+services:
+  db:
+    image: dahln/private:cdp_db.18.3.6.3
+
+  api:
+    image: dahln/private:cdp_api.18.3.6.3
+
+  ng:
+    image: dahln/private:cdp_ng.18.3.6.3
+ 
+  proxy:
+    image: dahln/private:cdp_proxy.18.3.6.3
+    ports:
+      - "80:80"
