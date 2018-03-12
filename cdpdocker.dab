@@ -1,0 +1,29 @@
+{
+  "Services": {
+    "api": {
+      "Image": "dahln/private@sha256:5f7b4544df6f34afb2d440732c9bfde90441b1b383c6244efaae9467768a8d66", 
+      "Networks": [
+        "default"
+      ]
+    }, 
+    "db": {
+      "Image": "dahln/private@sha256:7fd8e4b4aaf9aea133229c7fa520e20d6838a996a95d9d784955dac98c0cf54b", 
+      "Networks": [
+        "default"
+      ]
+    }, 
+    "nginx": {
+      "Image": "dahln/private@sha256:a8b71fdfd8eac79afc19298b0bfd1898533a408b1244585de81122b925534851", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 80, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}

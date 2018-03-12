@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
  
 services:
   db:
@@ -6,23 +6,25 @@ services:
     build:
       context:  ./db
       dockerfile: Dockerfile
+    restart: always
 
   api:
     image: cdp_api
     build:
       context:  ./api
       dockerfile: Dockerfile
+    links:
+      - db
+    restart: always
 
-  ng:
-    image: cdp_ng
+  nginx:
+    image: cdp_nginx
     build:
       context: ./website/Angular
       dockerfile: Dockerfile
- 
-  proxy:
-    image: cdp_proxy
-    build:
-      context:  ./proxy
-      dockerfile: Dockerfile
+    links:
+      - api
     ports:
-      - "80:80"
+    - "80:80"
+    restart: always
+ 

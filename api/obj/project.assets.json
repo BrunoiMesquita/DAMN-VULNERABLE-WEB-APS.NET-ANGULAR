@@ -13688,11 +13688,11 @@
   "project": {
     "version": "18.2.27.1",
     "restore": {
-      "projectUniqueName": "/home/dahln/repos/cdp/api/net.mongo.csproj",
+      "projectUniqueName": "/home/dahln/repo/cdp_docker/api/net.mongo.csproj",
       "projectName": "net.mongo",
-      "projectPath": "/home/dahln/repos/cdp/api/net.mongo.csproj",
+      "projectPath": "/home/dahln/repo/cdp_docker/api/net.mongo.csproj",
       "packagesPath": "/home/dahln/.nuget/packages/",
-      "outputPath": "/home/dahln/repos/cdp/api/obj/",
+      "outputPath": "/home/dahln/repo/cdp_docker/api/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
