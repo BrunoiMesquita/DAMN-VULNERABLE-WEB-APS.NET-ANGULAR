@@ -2,17 +2,17 @@ version: '3.5'
  
 services:
   db:
-    image: dahln/private:cdp_db.18.3.13.1
+    image: dahln/private:cdp_db.18.3.13.3
     restart: always
 
   api:
-    image: dahln/private:cdp_api.18.3.13.1
+    image: dahln/private:cdp_api.18.3.13.3
     links:
       - db
     restart: always
 
   nginx:
-    image: dahln/private:cdp_nginx.18.3.13.1    
+    image: dahln/private:cdp_nginx.18.3.13.3  
     links:
       - api
     ports:

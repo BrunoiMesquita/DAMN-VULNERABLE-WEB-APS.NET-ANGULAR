@@ -13,13 +13,17 @@
       ]
     }, 
     "nginx": {
-      "Image": "dahln/private@sha256:a8b71fdfd8eac79afc19298b0bfd1898533a408b1244585de81122b925534851", 
+      "Image": "dahln/private@sha256:eb452cfa75023c4dd2b89f18ea164ea286afac108fef9ec4fec2a1fff9839f93", 
       "Networks": [
         "default"
       ], 
       "Ports": [
         {
           "Port": 80, 
+          "Protocol": "tcp"
+        }, 
+        {
+          "Port": 443, 
           "Protocol": "tcp"
         }
       ]
