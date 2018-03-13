@@ -2,20 +2,20 @@ version: '3.5'
  
 services:
   db:
-    image: dahln/private:cdp_db.18.3.12.4
+    image: dahln/private:cdp_db.18.3.13.1
     restart: always
 
   api:
-    image: dahln/private:cdp_api.18.3.12.4
-    restart: always
+    image: dahln/private:cdp_api.18.3.13.1
     links:
       - db
     restart: always
 
   nginx:
-    image: dahln/private:cdp_nginx.18.3.12.4    
+    image: dahln/private:cdp_nginx.18.3.13.1    
     links:
       - api
     ports:
       - "80:80"
+      - "443:443"
     restart: always
