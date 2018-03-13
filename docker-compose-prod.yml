@@ -2,20 +2,38 @@ version: '3.5'
  
 services:
   db:
-    image: dahln/private:cdp_db.18.3.13.3
+    image: dahln/private:cdp_db.18.3.13.5
     restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname == deepspacenine
 
   api:
-    image: dahln/private:cdp_api.18.3.13.3
+    image: dahln/private:cdp_api.18.3.13.5
     links:
       - db
     restart: always
+    deploy:
+      mode: replicated
+      replicas: 5
+      placement:
+        constraints:
+          - node.hostname != deepspacenine
 
   nginx:
-    image: dahln/private:cdp_nginx.18.3.13.3  
+    image: dahln/private:cdp_nginx.18.3.13.5  
     links:
       - api
     ports:
       - "80:80"
       - "443:443"
     restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname == deepspacenine

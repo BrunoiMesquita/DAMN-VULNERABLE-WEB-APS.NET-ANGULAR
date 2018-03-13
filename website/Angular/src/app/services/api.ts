@@ -7,7 +7,7 @@ export class Api {
 
     }
     options = new RequestOptions({withCredentials: true});
-    apiRoot = document.domain === 'localhost' ? 'http://localhost/api' : 'https://netmongo.bckbtn.com/api'
+    apiRoot = document.domain === 'localhost' ? '//localhost/api' : '//ngnetmongo.glubfish.com/api'
 
     public registerUser(email: string, password: string, confirmPassword: string) {
         let user = { email, password, confirmPassword };
