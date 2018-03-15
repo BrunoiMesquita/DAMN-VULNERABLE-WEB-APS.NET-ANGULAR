@@ -3,6 +3,8 @@ version: '3.5'
 services:
   db:
     image: dahln/private:cdp_db.18.3.13.8
+    volumes:
+      - /home/dahln/data/db:/data/db
     restart: always
 
   api:
