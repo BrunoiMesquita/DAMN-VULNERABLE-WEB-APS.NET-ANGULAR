@@ -21,7 +21,7 @@ services:
   nginx:
     image: cdp_nginx
     build:
-      context: ./website/Angular
+      context: ./website
       dockerfile: Dockerfile
     links:
       - api

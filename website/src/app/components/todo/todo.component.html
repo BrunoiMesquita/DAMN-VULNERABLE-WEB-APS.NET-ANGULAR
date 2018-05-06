@@ -1,0 +1,39 @@
+    <div class="row">
+      <h4 class="mx-auto">Todo List</h4>
+    </div>
+
+    <div class="row">
+      <form (ngSubmit)="createTodo()" #createForm="ngForm" class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Create New Todo Item" [(ngModel)]="model" name="newTask" />
+        <div class="input-group-append">
+          <input type="submit" class="btn btn-primary" value="Add" />
+        </div>
+      </form>
+    </div>
+
+    <div class="row" *ngIf="tasks.length > 0">
+      <table class="table table-hover">
+        <tbody>
+          <tr *ngFor="let item of tasks">
+            <td width="50" (click)="completeTodo(item)" class="align-middle pointer">
+              <i class="fas fa-check fa-2x {{item.completed == true ? 'completed' : 'incomplete'}}"></i>
+            </td>
+            <td (click)="completeTodo(item)" class="align-middle pointer">
+              <span class="{{item.completed == true ? 'strike' : 'unstrike'}}">{{item.task}}</span>
+            </td>
+            <td width="50" class="align-middle">
+              <div class="btn btn-sm btn-danger" (click)="deleteTodo(item)">
+                <i class="fas fa-times"></i>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row mt-3" *ngIf="tasks.length <= 0">
+      <div class="alert alert-info mx-auto" role="alert">
+        You have no 'todo' items here. Create some and start keeping track of your tasks. Check them off when they are completed
+        - delete them when you are sick of looking at them.
+      </div>
+    </div>
