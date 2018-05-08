@@ -8,3 +8,14 @@
 /home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.AssemblyInfo.cs
 /home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.dll
 /home/dahln/repos/cdp/obj/Debug/netcoreapp2.0/net.mongo.pdb
+C:\Users\dahln\source\repos\cdp_docker\api\bin\Debug\netcoreapp2.0\net.mongo.deps.json
+C:\Users\dahln\source\repos\cdp_docker\api\bin\Debug\netcoreapp2.0\net.mongo.runtimeconfig.json
+C:\Users\dahln\source\repos\cdp_docker\api\bin\Debug\netcoreapp2.0\net.mongo.runtimeconfig.dev.json
+C:\Users\dahln\source\repos\cdp_docker\api\bin\Debug\netcoreapp2.0\net.mongo.dll
+C:\Users\dahln\source\repos\cdp_docker\api\bin\Debug\netcoreapp2.0\net.mongo.pdb
+C:\Users\dahln\source\repos\cdp_docker\api\obj\Debug\netcoreapp2.0\net.mongo.csprojResolveAssemblyReference.cache
+C:\Users\dahln\source\repos\cdp_docker\api\obj\Debug\netcoreapp2.0\net.mongo.csproj.CoreCompileInputs.cache
+C:\Users\dahln\source\repos\cdp_docker\api\obj\Debug\netcoreapp2.0\net.mongo.AssemblyInfoInputs.cache
+C:\Users\dahln\source\repos\cdp_docker\api\obj\Debug\netcoreapp2.0\net.mongo.AssemblyInfo.cs
+C:\Users\dahln\source\repos\cdp_docker\api\obj\Debug\netcoreapp2.0\net.mongo.dll
+C:\Users\dahln\source\repos\cdp_docker\api\obj\Debug\netcoreapp2.0\net.mongo.pdb

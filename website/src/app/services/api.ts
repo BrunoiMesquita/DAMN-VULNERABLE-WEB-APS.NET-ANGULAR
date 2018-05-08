@@ -3,11 +3,20 @@ import { Http, RequestOptions } from '@angular/http';
 
 @Injectable()
 export class Api {
+    private apiRoot : string;
     constructor(public _client: Http) {
-
+      if(window.location.host == 'localhost') {
+        this.apiRoot = '//localhost/api'; //For Docker
+      }
+      else if (window.location.host == 'localhost:4200') {
+        this.apiRoot = '//localhost:58623/api' //For Development
+      }
+      else {
+        this.apiRoot = '//ngnetmongo.dahln.net/api' //For Production
+      }
     }
     options = new RequestOptions({withCredentials: true});
-    apiRoot = document.domain === 'localhost' ? '//localhost/api' : '//ngnetmongo.glubfish.com/api'
+    // apiRoot = document.domain === 'localhost' ? '//localhost/api' : '//ngnetmongo.glubfish.com/api'
 
     public registerUser(email: string, password: string, confirmPassword: string) {
         let user = { email, password, confirmPassword };
