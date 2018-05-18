@@ -9,6 +9,7 @@ COPY . .
 RUN npm install
 
 ## Build the angular app in production mode and store the artifacts in dist folder
+RUN npm install typescript@'>=2.7.0 <2.8.0'
 RUN $(npm bin)/ng build
 
 #stage 2
