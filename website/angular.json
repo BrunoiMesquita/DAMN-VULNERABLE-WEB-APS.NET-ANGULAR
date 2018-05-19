@@ -118,5 +118,10 @@
       }
     }
   },
-  "defaultProject": "website"
+  "defaultProject": "website",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  }
 }
