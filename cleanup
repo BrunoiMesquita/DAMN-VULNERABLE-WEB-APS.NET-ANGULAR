@@ -1,6 +1,0 @@
- docker container stop $(docker container ls -a -q)
- docker container rm $(docker container ls -a -q)
- docker volume rm $(docker volume ls -qf dangling=true)
- docker image rm $(docker image ls -f "dangling=true" -q)
- docker image rm $(docker image ls)
-
