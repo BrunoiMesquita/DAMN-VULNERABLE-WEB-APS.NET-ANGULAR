@@ -12,7 +12,7 @@ export class Api {
         this.apiRoot = '//localhost:58623/api' //For Development
       }
       else {
-        this.apiRoot = '//ngnetmongo.dahln.net/api' //For Production
+        this.apiRoot = '//' + window.location.host + '/api' //For Production
       }
     }
     options = new RequestOptions({withCredentials: true});
