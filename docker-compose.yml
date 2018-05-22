@@ -10,7 +10,7 @@ services:
     restart: always
 
   api:
-    image: cdp_api
+    image: glubfish_api
     build:
       context:  ./api
       dockerfile: Dockerfile
@@ -19,7 +19,7 @@ services:
     restart: always
 
   nginx:
-    image: cdp_nginx
+    image: glubfish_nginx
     build:
       context: ./website
       dockerfile: Dockerfile

@@ -13095,26 +13095,23 @@
   },
   "packageFolders": {
     "C:\\Users\\dahln\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "18.2.27.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dahln\\source\\repos\\cdp_docker\\api\\net.mongo.csproj",
+      "projectUniqueName": "C:\\Users\\dahln\\source\\repos\\glubfish\\api\\net.mongo.csproj",
       "projectName": "net.mongo",
-      "projectPath": "C:\\Users\\dahln\\source\\repos\\cdp_docker\\api\\net.mongo.csproj",
+      "projectPath": "C:\\Users\\dahln\\source\\repos\\glubfish\\api\\net.mongo.csproj",
       "packagesPath": "C:\\Users\\dahln\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dahln\\source\\repos\\cdp_docker\\api\\obj\\",
+      "outputPath": "C:\\Users\\dahln\\source\\repos\\glubfish\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\dahln\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
