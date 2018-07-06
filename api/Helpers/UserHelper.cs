@@ -1,5 +1,5 @@
-﻿using net.mongo.Data;
-using net.mongo.Model;
+﻿using glubfish.Data;
+using glubfish.Model;
 using MongoDB.Driver;
 using Newtonsoft.Json;
 using System;
@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace net.mongo.Helpers
+namespace glubfish.Helpers
 {
     public class UserHelper
     {

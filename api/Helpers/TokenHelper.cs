@@ -1,4 +1,4 @@
-﻿using net.mongo.Model;
+﻿using glubfish.Model;
 using JWT;
 using JWT.Algorithms;
 using JWT.Serializers;
@@ -13,7 +13,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace net.mongo.Helpers
+namespace glubfish.Helpers
 {
 	public class TokenHelper
 	{

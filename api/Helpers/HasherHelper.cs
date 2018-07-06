@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace net.mongo.Helpers
+namespace glubfish.Helpers
 {
     public class HasherHelper
     {

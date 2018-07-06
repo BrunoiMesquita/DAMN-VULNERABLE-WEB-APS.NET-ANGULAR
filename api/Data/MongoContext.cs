@@ -1,4 +1,4 @@
-﻿using net.mongo.Model;
+﻿using glubfish.Model;
 using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace net.mongo.Data
+namespace glubfish.Data
 {
     public class MongoContext
     {

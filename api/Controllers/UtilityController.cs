@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-using net.mongo.Data;
-using net.mongo.Model;
+using glubfish.Data;
+using glubfish.Model;
 
-namespace net.mongo.Controllers
+namespace glubfish.Controllers
 {
     public class UtilityController : Controller
     {

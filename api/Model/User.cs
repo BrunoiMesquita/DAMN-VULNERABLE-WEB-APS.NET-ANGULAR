@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace net.mongo.Model
+namespace glubfish.Model
 {
     public class User
     {

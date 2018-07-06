@@ -13,12 +13,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using net.mongo.Data;
-using net.mongo.Helpers;
-using net.mongo.Model;
+using glubfish.Data;
+using glubfish.Helpers;
+using glubfish.Model;
 using Newtonsoft.Json.Serialization;
 
-namespace net.mongo
+namespace glubfish
 {
     public class Startup
     {
