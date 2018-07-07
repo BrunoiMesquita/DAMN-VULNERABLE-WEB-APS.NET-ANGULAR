@@ -1,5 +1,5 @@
 #Stage 1
-FROM microsoft/aspnetcore-build as builder
+FROM microsoft/dotnet:2.1.301-sdk-alpine3.7 as builder
 WORKDIR /api
 
 COPY *.csproj .
@@ -10,7 +10,7 @@ RUN dotnet publish /t:clean --output /app/ --configuration Release
 
 
 #Stage 2
-FROM microsoft/aspnetcore:2.0.6-jessie
+FROM microsoft/dotnet:2.1.1-aspnetcore-runtime-alpine3.7
  
 WORKDIR /app
 COPY --from=builder /app .
@@ -18,4 +18,4 @@ COPY --from=builder /app .
 ENV ASPNETCORE_URLS http://+:5000
 EXPOSE 5000
  
-ENTRYPOINT ["dotnet", "net.mongo.dll"]
+ENTRYPOINT ["dotnet", "glubfish.dll"]
