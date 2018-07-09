@@ -1,4 +1,3 @@
-,,,html
 <h2>What is Glubfish</h2>
 
 <p>Glubfish Stack is an open source project, designed to help a project get started faster. It is created with
@@ -97,4 +96,3 @@
   <li>Replaced old .NET 4.6 project</li>
   <li>Switched to MongoDB from SQL</li>
 </ul>
-,,,
