@@ -9,7 +9,7 @@ export class Api {
         this.apiRoot = '//localhost/api'; //For Docker
       }
       else if (window.location.host == 'localhost:4200') {
-        this.apiRoot = '//localhost:58623/api' //For Development
+        this.apiRoot = '//localhost:58622/api' //For Development
       }
       else {
         this.apiRoot = '//' + window.location.host + '/api' //For Production

@@ -60,6 +60,12 @@
 <p>NOTE: This image is setup with an SSL certificate, associated with the glubfish.dahln.net domain. You can run these images, but you will get a certificate warning. Visit the github for the project source, and modify the images to include your SSL cert.</p>
 
 <h3>Maintenance</h3>
+<p>August 2018</p>
+<ul>
+  <li>Updated Angular to 6.1.1</li>
+  <li>Updated to .NET Core 2.1.2</li>
+</ul>
+
 <p>July 2018</p>
 <ul>
   <li>Updated Angular to 6.0.7</li>
