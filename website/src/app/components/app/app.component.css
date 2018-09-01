@@ -10,3 +10,7 @@ footer {
 .pointer{
   cursor: pointer;
 }
+
+.navbar {
+  border-bottom: 5px solid teal !important;
+}
