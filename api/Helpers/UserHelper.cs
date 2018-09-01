@@ -1,5 +1,5 @@
-﻿using glubfish.Data;
-using glubfish.Model;
+﻿using damnstack.Data;
+using damnstack.Model;
 using MongoDB.Driver;
 using Newtonsoft.Json;
 using System;
@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace glubfish.Helpers
+namespace damnstack.Helpers
 {
     public class UserHelper
     {

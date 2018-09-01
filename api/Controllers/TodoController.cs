@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using glubfish.Data;
+using damnstack.Data;
 using Microsoft.AspNetCore.Authorization;
-using glubfish.Model;
+using damnstack.Model;
 using MongoDB.Driver;
-using glubfish.Helpers;
+using damnstack.Helpers;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace glubfish.Controllers
+namespace damnstack.Controllers
 {
     public class TodoController : Controller
     {

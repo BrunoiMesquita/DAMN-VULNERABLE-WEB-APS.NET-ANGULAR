@@ -1,4 +1,4 @@
-﻿using glubfish.Model;
+﻿using damnstack.Model;
 using JWT;
 using JWT.Algorithms;
 using JWT.Serializers;
@@ -13,7 +13,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace glubfish.Helpers
+namespace damnstack.Helpers
 {
 	public class TokenHelper
 	{

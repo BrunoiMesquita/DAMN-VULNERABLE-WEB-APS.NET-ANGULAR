@@ -13,12 +13,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using glubfish.Data;
-using glubfish.Helpers;
-using glubfish.Model;
+using damnstack.Data;
+using damnstack.Helpers;
+using damnstack.Model;
 using Newtonsoft.Json.Serialization;
 
-namespace glubfish
+namespace damnstack
 {
     public class Startup
     {
