@@ -15,5 +15,5 @@ RUN $(npm bin)/ng build
 #stage 2
 FROM nginx
 COPY --from=builder /app/dist /usr/share/nginx/html
-COPY cert /usr/share/nginx/cert
+COPY ssl /usr/share/nginx/ssl
 COPY nginx.conf /etc/nginx/nginx.conf

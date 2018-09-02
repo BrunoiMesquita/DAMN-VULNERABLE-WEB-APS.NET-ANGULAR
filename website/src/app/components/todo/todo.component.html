@@ -21,7 +21,7 @@
             <td (click)="completeTodo(item)" class="align-middle pointer">
               <span class="{{item.completed == true ? 'strike' : 'unstrike'}}">{{item.task}}</span>
             </td>
-            <td width="50" class="align-middle" (click)="deleteTodo(item)">
+            <td width="50" class="align-middle pointer" (click)="deleteTodo(item)">
               <i class="far fa-trash-alt fa-2x trash"></i>
             </td>
           </tr>

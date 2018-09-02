@@ -1,6 +1,6 @@
-docker tag glubfish_api:latest dahln/glubfish:glubfish_api.18.8.1
-docker tag glubfish_nginx:latest dahln/glubfish:glubfish_nginx.18.8.1
+docker tag damnstack_api:latest damnstack/damnstack:damnstack_api.18.9.1
+docker tag damnstack_nginx:latest damnstack/damnstack:damnstack_nginx.18.9.1
 
-docker push dahln/glubfish:glubfish_api.18.8.1
-docker push dahln/glubfish:glubfish_nginx.18.8.1
+docker push damnstack/damnstack:damnstack_api.18.9.1
+docker push damnstack/damnstack:damnstack_nginx.18.9.1
 

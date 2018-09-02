@@ -10,7 +10,7 @@ services:
     restart: always
 
   api:
-    image: glubfish_api
+    image: damnstack_api
     build:
       context:  ./api
       dockerfile: Dockerfile
@@ -19,7 +19,7 @@ services:
     restart: always
 
   nginx:
-    image: glubfish_nginx
+    image: damnstack_nginx
     build:
       context: ./website
       dockerfile: Dockerfile
