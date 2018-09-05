@@ -10,7 +10,7 @@ services:
     restart: always
 
   api:
-    image: damnstack_api
+    image: stack_api
     build:
       context:  ./api
       dockerfile: Dockerfile
@@ -19,7 +19,7 @@ services:
     restart: always
 
   nginx:
-    image: damnstack_nginx
+    image: stack_nginx
     build:
       context: ./website
       dockerfile: Dockerfile
