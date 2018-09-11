@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-using damnstack.Data;
-using damnstack.Model;
+using api.Data;
+using api.Model;
 
-namespace damnstack.Controllers
+namespace api.Controllers
 {
     public class UtilityController : Controller
     {

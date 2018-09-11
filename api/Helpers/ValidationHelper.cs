@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace damnstack.Helpers
+namespace api.Helpers
 {
     public class ValidationHelper
     {

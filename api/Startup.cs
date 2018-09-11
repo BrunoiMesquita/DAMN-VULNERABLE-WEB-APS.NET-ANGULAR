@@ -13,12 +13,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using damnstack.Data;
-using damnstack.Helpers;
-using damnstack.Model;
+using api.Data;
+using api.Helpers;
+using api.Model;
 using Newtonsoft.Json.Serialization;
 
-namespace damnstack
+namespace api
 {
     public class Startup
     {

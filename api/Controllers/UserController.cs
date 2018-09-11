@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using damnstack.Data;
-using damnstack.Model;
+using api.Data;
+using api.Model;
 using Microsoft.AspNetCore.Authorization;
-using damnstack.Helpers;
+using api.Helpers;
 using MongoDB.Driver;
 using System.IdentityModel.Tokens.Jwt;
 using JWT;
@@ -19,7 +19,7 @@ using System.Text;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace damnstack.Controllers
+namespace api.Controllers
 {
 	public class UserController : Controller
 	{

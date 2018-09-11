@@ -1,5 +1,5 @@
-﻿using damnstack.Data;
-using damnstack.Model;
+﻿using api.Data;
+using api.Model;
 using MongoDB.Driver;
 using Newtonsoft.Json;
 using System;
@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace damnstack.Helpers
+namespace api.Helpers
 {
     public class UserHelper
     {

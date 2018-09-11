@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace damnstack.Model
+namespace api.Model
 {
     public class Todo
     {

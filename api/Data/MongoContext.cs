@@ -1,4 +1,4 @@
-﻿using damnstack.Model;
+﻿using api.Model;
 using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace damnstack.Data
+namespace api.Data
 {
     public class MongoContext
     {
