@@ -1,3 +1,9 @@
+<h1>Nov. 9. 2018: Major architecture changes - work in progress. Please read.</h1>
+<p>
+  Major changes include wrapping the NG application in a .NET Core wrapper. This simplifies the builds and removes the necessity for CORS. Updated to NG 7. New .NET Core wrapper adds the ability to easily debug client side TS/JS files within Visual Studio.
+  <strong>Docker builds are not working yet.</strong>
+</p>
+
 <h3>What is DAMN Stack</h3>
 
 <p>DAMN = Docker. Angular. MongoDB. and .NET.</p>
