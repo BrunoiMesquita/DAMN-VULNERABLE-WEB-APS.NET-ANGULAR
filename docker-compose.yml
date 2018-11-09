@@ -9,22 +9,13 @@ services:
     #   - /home/dahln/data/db:/data/db
     restart: always
 
-  api:
-    image: stack_api
+  app:
+    image: stack_app
     build:
-      context:  ./api
+      context: .
       dockerfile: Dockerfile
     links:
       - db
-    restart: always
-
-  nginx:
-    image: stack_nginx
-    build:
-      context: ./website
-      dockerfile: Dockerfile
-    links:
-      - api
     ports:
     - "80:80"
     - "443:443"
