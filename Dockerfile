@@ -1,11 +1,15 @@
 #Stage 1
 FROM microsoft/dotnet:2.1-sdk as builder
-WORKDIR /api
 
-COPY *.csproj .
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install nodejs -y
+
+COPY ./app.stack ./app.stack
+COPY ./data.stack ./data.stack
+COPY ./logic.stack ./logic.stack
+COPY ./model.stack ./model.stack
+WORKDIR /app.stack
 RUN dotnet restore
-
-COPY . .
 RUN dotnet publish /t:clean --output /app/ --configuration Release
 
 
