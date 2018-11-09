@@ -16,6 +16,15 @@ services:
       dockerfile: Dockerfile
     links:
       - db
+    restart: always
+
+  nginx:
+    image: stack_nginx
+    build:
+      context: ./proxy.stack
+      dockerfile: Dockerfile
+    links:
+      - app
     ports:
     - "80:80"
     - "443:443"
