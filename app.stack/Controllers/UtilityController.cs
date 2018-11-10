@@ -11,8 +11,8 @@ namespace app.stack.Controllers
     public class UtilityController : Controller
     {
         private ApplicationSettings _applicationSettings { get; set; }
-        private UtilityHelper _utilityHelper { get; set; }
-        public UtilityController(ApplicationSettings applicationSettings, UtilityHelper utilityHelper)
+        private UtilityLogic _utilityHelper { get; set; }
+        public UtilityController(ApplicationSettings applicationSettings, UtilityLogic utilityHelper)
         {
             _applicationSettings = applicationSettings;
             _utilityHelper = utilityHelper;

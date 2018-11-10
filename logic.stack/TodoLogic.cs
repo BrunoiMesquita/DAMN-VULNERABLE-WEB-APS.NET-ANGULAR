@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace logic.stack
 {
-    public class TodoHelper
+    public class TodoLogic
     {
         private MongoContext _db { get; set; }
-        public TodoHelper(MongoContext context)
+        public TodoLogic(MongoContext context)
         {
             _db = context;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace logic.stack
 {
-    public class ValidationHelper
+    public class ValidationLogic
     {
         public bool Email(string email)
         {

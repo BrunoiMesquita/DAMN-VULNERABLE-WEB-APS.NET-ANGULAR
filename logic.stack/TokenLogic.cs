@@ -14,11 +14,11 @@ using System.Threading.Tasks;
 
 namespace logic.stack
 {
-	public class TokenHelper
+	public class TokenLogic
 	{
 		private ApplicationSettings _applicationSettings { get; set; }
 
-		public TokenHelper(ApplicationSettings applicationSettings)
+		public TokenLogic(ApplicationSettings applicationSettings)
 		{
 			_applicationSettings = applicationSettings;
 		}

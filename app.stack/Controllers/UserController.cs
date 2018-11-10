@@ -14,12 +14,12 @@ namespace app.stack.Controllers
 {
 	public class UserController : Controller
 	{
-		private UserHelper _userHelper { get; set; }
-		private ValidationHelper _validationHelper { get; set; }
-		private HasherHelper _hasherHelper { get; set; }
-		private TokenHelper _tokenHelper { get; set; }
+		private UserLogic _userHelper { get; set; }
+		private ValidationLogic _validationHelper { get; set; }
+		private HasherLogic _hasherHelper { get; set; }
+		private TokenLogic _tokenHelper { get; set; }
 		private ApplicationSettings _applicationSettings { get; set; }
-		public UserController(UserHelper userHelper, ValidationHelper validationHelper, HasherHelper hasherHelper, TokenHelper tokenHelper, ApplicationSettings applicationSettings)
+		public UserController(UserLogic userHelper, ValidationLogic validationHelper, HasherLogic hasherHelper, TokenLogic tokenHelper, ApplicationSettings applicationSettings)
 		{
 			_userHelper = userHelper;
 			_validationHelper = validationHelper;

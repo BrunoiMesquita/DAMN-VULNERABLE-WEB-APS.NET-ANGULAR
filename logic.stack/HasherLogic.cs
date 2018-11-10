@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace logic.stack
 {
-    public class HasherHelper
+    public class HasherLogic
     {
         /// <summary>
         /// Generate a SHA256 hash, based on input string.

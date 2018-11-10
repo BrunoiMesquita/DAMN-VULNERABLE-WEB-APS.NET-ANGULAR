@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace logic.stack
 {
-    public class UserHelper
+    public class UserLogic
     {
         private MongoContext _db { get; set; }
-        private HasherHelper _hasherHelper { get; set; }
-        public UserHelper(MongoContext context, HasherHelper hasherHelper)
+        private HasherLogic _hasherHelper { get; set; }
+        public UserLogic(MongoContext context, HasherLogic hasherHelper)
         {
             _db = context;
             _hasherHelper = hasherHelper;

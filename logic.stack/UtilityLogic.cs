@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace logic.stack
 {
-    public class UtilityHelper
+    public class UtilityLogic
     {
         private MongoContext _db { get; set; }
-        public UtilityHelper(MongoContext context)
+        public UtilityLogic(MongoContext context)
         {
             _db = context;
         }

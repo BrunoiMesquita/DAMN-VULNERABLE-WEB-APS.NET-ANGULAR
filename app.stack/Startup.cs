@@ -83,12 +83,13 @@ namespace app.stack
                 configuration.RootPath = "wwwroot/dist";
             });
 
-            services.AddTransient<MongoContext>();
-            services.AddTransient<HasherHelper>();
-            services.AddTransient<ValidationHelper>();
-            services.AddTransient<TokenHelper>();
-            services.AddTransient<UserHelper>();
-            services.AddTransient<TodoHelper>();
+            services.AddSingleton<MongoContext>();
+            services.AddSingleton<HasherLogic>();
+            services.AddSingleton<ValidationLogic>();
+            services.AddSingleton<TokenLogic>();
+            services.AddSingleton<UserLogic>();
+            services.AddSingleton<TodoLogic>();
+            services.AddSingleton<UtilityLogic>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

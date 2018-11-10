@@ -14,9 +14,9 @@ namespace app.stack.Controllers
 {
     public class TodoController : Controller
     {
-        private UserHelper _userHelper { get; set; }
-        private TodoHelper _todoHelper { get; set; }
-        public TodoController(UserHelper userHelper, TodoHelper todoHelper)
+        private UserLogic _userHelper { get; set; }
+        private TodoLogic _todoHelper { get; set; }
+        public TodoController(UserLogic userHelper, TodoLogic todoHelper)
         {
             _userHelper = userHelper;
             _todoHelper = todoHelper;
