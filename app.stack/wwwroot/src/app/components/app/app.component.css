@@ -11,6 +11,12 @@ footer {
   cursor: pointer;
 }
 
-.navbar {
-  border-bottom: 5px solid teal !important;
+.logo {
+  height: 60px;
+}
+
+.content-body {
+  background-color: white;
+  margin-bottom: -60px;
+  padding-top: 95px;
 }
