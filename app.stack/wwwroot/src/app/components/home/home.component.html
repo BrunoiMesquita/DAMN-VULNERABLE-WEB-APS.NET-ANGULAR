@@ -1,7 +1,8 @@
 <h3>What is DAMN Stack</h3>
 
 <p>DAMN = Docker. Angular. MongoDB. and .NET.</p>
-<p>DAMN Stack is an open source project, designed to get new projects up and going quickly, by providing a template and pattern to follow. It is created with
+<p>
+  DAMN Stack is an open source project, designed to get new projects up and going quickly, by providing a template and pattern to follow. It is created with
   <a href="http://angular.io" target="_blank">Angular</a> (for the UI),
   <a href="https://www.microsoft.com/net/core#windowscmd" target="_blank">.NET Core</a> (for the API), and
   <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> (...for the DB).
@@ -35,7 +36,7 @@
 
 <h3>About This Project</h3>
 <p>
-    The <strong>demo</strong> for this stack can be found here: <a href="https://damnstack.com">https://damnstack.com</a>
+  The <strong>demo</strong> for this stack can be found here: <a href="https://damnstack.org">https://damnstack.org</a>
 </p>
 <p>
   <strong>Note: Because this site is for demonstration, the database could be wiped/recreated at any time.</strong>
@@ -71,9 +72,16 @@
 <p>The main "code" project has a file, dockerTagPushToHub.bat. This will push the latest project image to the connected repo. If you use this file, change the image version numbers in there and make them match the version numbers in the docker-compose in the glubfish-deploy project. After you pushing the latest images to docker hub repo, pull the latest docker-compose to your prodcution machine. If you updated the docker-compose to have the latest image version numbers, when should be able to deploye easily.</p>
 <h4>Deployment Notes</h4>
 <p>NOTE: The docker compose file specifies a storage volume for the mongodb database. That path is for a linux box. Change it for your particular configuration</p>
-<p>NOTE: This image is setup with an SSL certificate, associated with the damnstack.com domain. You can run these images, but you will get a certificate warning. Visit the github for the project source, and modify the images to include your SSL cert.</p>
+<p>NOTE: This image is setup with an SSL certificate, associated with the damnstack.org domain. You can run these images, but you will get a certificate warning. Visit the github for the project source, and modify the images to include your SSL cert.</p>
 
 <h3>Maintenance</h3>
+<p>December 2018</p>
+<ul>
+  <li>Updated do .NET Core 2.2</li>
+  <li>Update to Angular 7.1.2</li>
+  <li>Changed host domain from damnstack.com to damnstack.org</li>
+</ul>
+
 <p>November 2018</p>
 <ul>
   <li><strong>Major Changes</strong></li>
@@ -125,7 +133,8 @@
   <li>Updated to Bootstrap 4</li>
   <li>Added FontAwesome 4 (Bootstrap dropped Glyphicon support)</li>
   <li>Support for FontAwesome 5 will come when FontAwesome releases their Angular library</li>
-  <li>Replaced ngx-modialog with
+  <li>
+    Replaced ngx-modialog with
     <a href="http://bootboxjs.com/" target="_blank">BootBox.js</a>
   </li>
 </ul>

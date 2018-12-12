@@ -1,5 +1,5 @@
 #Stage 1
-FROM microsoft/dotnet:2.1-sdk as builder
+FROM microsoft/dotnet:2.2-sdk as builder
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install nodejs -y
@@ -14,7 +14,7 @@ RUN dotnet publish /t:clean --output /app/ --configuration Release
 
 
 #Stage 2
-FROM microsoft/dotnet:2.1-aspnetcore-runtime
+FROM microsoft/dotnet:2.2-aspnetcore-runtime
  
 WORKDIR /app
 COPY --from=builder /app .
