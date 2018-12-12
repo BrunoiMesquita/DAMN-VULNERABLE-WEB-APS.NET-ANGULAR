@@ -27,7 +27,7 @@
 <p><a href="https://hub.docker.com/r/damnstack/stack/" target="_blank">https://hub.docker.com/r/damnstack/stack/</a></p>
 
 <p>Contact/FAQ/Support:</p>
-<p><a href="mailto:damnstack@outlook.com">damnstack@outlook.com</a></p>
+<p><a href="mailto:contact@damnstack.org">contact@damnstack.org</a></p>
 
 <h3>History of DAMN Stack</h3>
 <p>
