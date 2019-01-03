@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Owin;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -51,9 +53,9 @@ namespace api.damn
                 options.ExpireTimeSpan = new TimeSpan(1000, 0, 0, 0);
                 options.Cookie = new CookieBuilder()
                 {
-                    Name = "access",
+                    Name = "access_token",
                     HttpOnly = true,
-                    SameSite = SameSiteMode.Strict
+                    SameSite = SameSiteMode.None
                 };
                 options.Events.OnRedirectToLogin = (context) =>
                 {
@@ -61,9 +63,10 @@ namespace api.damn
                     return Task.CompletedTask;
                 };
                 options.LoginPath = PathString.Empty;
-                options.TicketDataFormat = new CustomJwtDataFormat(SecurityAlgorithms.HmacSha512, tokenValidationParameters);
+                options.TicketDataFormat = new CustomJwtDataFormat(SecurityAlgorithms.HmacSha256, tokenValidationParameters);
             });
 
+            // Add framework services.
             services.AddMvc(options =>
             {
                 options.CacheProfiles.Add("no-cache", new CacheProfile()
@@ -87,9 +90,9 @@ namespace api.damn
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll",
-                    builder => builder.AllowAnyOrigin()
-                    .AllowAnyMethod()
+                    builder => builder.WithOrigins("http://localhost:4200")
                     .AllowAnyHeader()
+                    .AllowAnyMethod()
                     .AllowCredentials());
             });
         }
@@ -97,7 +100,6 @@ namespace api.damn
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-
             app.UseAuthentication();
             app.UseCors("AllowAll");
             app.UseMvcWithDefaultRoute();

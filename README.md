@@ -18,16 +18,16 @@
 
 
 <p>Project Source Repo:</p>
-<p><a href="https://github.com/damnstack/stack" target="_blank">https://github.com/damnstack/stack</a></p>
+<p><a href="https://github.com/dahln/damn" target="_blank">https://github.com/dahln/damn</a></p>
 
 <p>Project Deployment Repo:</p>
-<p><a href="https://github.com/damnstack/stack-deploy" target="_blank">https://github.com/damnstack/stack-deploy</a></p>
+<p><a href="https://github.com/dahln/damn-deploy" target="_blank">https://github.com/dahln/damn-deploy</a></p>
 
 <p>Docker Hub Repo:</p>
-<p><a href="https://hub.docker.com/r/damnstack/stack/" target="_blank">https://hub.docker.com/r/damnstack/stack/</a></p>
+<p><a href="https://hub.docker.com/r/dahln/damn-deploy/" target="_blank">https://hub.docker.com/r/dahln/damn-deploy/</a></p>
 
 <p>Contact/FAQ/Support:</p>
-<p><a href="mailto:contact@damnstack.org">contact@damnstack.org</a></p>
+<p><a href="mailto:damnstack@outlook.com">damnstack@outlook.com</a></p>
 
 <h3>History of DAMN Stack</h3>
 <p>
@@ -75,6 +75,16 @@
 <p>NOTE: This image is setup with an SSL certificate, associated with the damnstack.org domain. You can run these images, but you will get a certificate warning. Visit the github for the project source, and modify the images to include your SSL cert.</p>
 
 <h3>Maintenance</h3>
+<p>December 2018</p>
+<ul>
+  <li>CORS Fixes for .NET Core 2.2</li>
+  <li>Separated the .NET Core and Angular applications into Client/Server applications.</li>
+  <li>Updated dockerfiles to match new structure</li>
+  <li>Moved to new github repo github.com/dahln/damn</li>
+  <li>Moved to new docker repo hub.docker.com/r/dahln/damn-deploy</li>
+</ul>
+
+
 <p>December 2018</p>
 <ul>
   <li>Updated do .NET Core 2.2</li>
