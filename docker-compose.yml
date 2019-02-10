@@ -2,6 +2,14 @@ version: '3.5'
  
 services:
 
+  db:
+    image: mongo
+    ports:
+      - 27017:27017
+    # volumes:
+    #   - /home/dahln/data/db:/data/db
+    restart: always
+
   api:
     image: damn_api
     build:
