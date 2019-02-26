@@ -40,7 +40,7 @@ namespace logic.damn
 
         async public Task TaskDeleteTodoByUserIdItemId(string userId, string itemId)
         {
-            await _db.Todos.DeleteOneAsync(t => t.Owner == userId && t.Owner == userId);
+            await _db.Todos.DeleteOneAsync(t => t.Owner == userId && t.Id == itemId);
         }
     }
 }
